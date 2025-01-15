@@ -6,7 +6,7 @@
 
 <p align="left"> <a href="https://twitter.com/kuma10296" target="blank"><img src="https://img.shields.io/twitter/follow/kuma10296?logo=twitter&style=for-the-badge" alt="kuma10296" /></a> </p>
 
-- 🌱 I’m currently learning **Kafka**
+- 🌱 I’m currently learning **Angular JS**
 
 - 👨‍💻 All of my projects are available at [https://github.com/Allmight-456](https://github.com/Allmight-456)
 

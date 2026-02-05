@@ -10,7 +10,7 @@
 
 - 👨‍💻 All of my projects are available at [https://github.com/Allmight-456](https://github.com/Allmight-456)
 
-- 📫 How to reach me **21cs3024@rgipt.ac.in**
+- 📫 How to reach me **bhardwajishansingh@gmail.com**
 
 - 📄 Know about my experiences [https://github.com/Allmight-456/Resume](https://github.com/Allmight-456/Resume)
 

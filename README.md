@@ -3,7 +3,7 @@
 <h1 align="center">Konichiwa Devs, Ishan here 👋</h1>
 
 <p align="center">
-  <code>$ Backend-engineer --Stack : AI,Python,Go,Postgres --location Bangaluru </code>
+  <code>$ Backend & AI Engineer --Stack : AI,Python,Go,Postgres --location Bangaluru </code>
 </p>
 
 <p align="center">

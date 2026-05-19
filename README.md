@@ -32,9 +32,49 @@ $ uptime --career
 $ tail -f ./now.log
 ```
 
-- 🛠️  **SkillForge** — building a procedural-memory layer for AI coding agents. AST-based retrieval distills LLM bug fixes into reusable Claude Skill files. Hitting ~50× token reduction (~3000 → ~80) on repeat-class errors.
-- 📐  Working through 25-topic **System Design** curriculum — currently on chat systems & rate limiters.
-- ✍️  Writing the **production git history** as engineering blog posts on [Hashnode](#) — Gemini JSON parsing edge cases, idempotent migration scripts, Docker restart-loop bugs.
+> Live notes on what I'm building, breaking, and reading. Cross-posted weekly to [LinkedIn](https://linkedin.com/in/ishan-kumar-) and [X](https://x.com/kuma10296).
+
+<details>
+<summary><b>🛠️  Building — SkillForge: agents that auto-detect their own skills</b></summary>
+
+AST-based retrieval over a Claude Skill library, human-gated approval loop. Cuts repeat-class error context from **~3000 → ~80 tokens (~50×)**. Repo: [github.com/Allmight-456/SkillForge](https://github.com/Allmight-456).
+</details>
+
+<details>
+<summary><b>🔁  Running — Hermes & OpenClaw on Hostinger cloud</b></summary>
+
+Self-hosted long-running agent boxes, kept alive specifically to watch where production-grade agent loops degrade. Tool-loop convergence, memory bleed across runs, where they crack under sustained load. Operational notes feed back into SkillForge.
+</details>
+
+<details>
+<summary><b>🧪  Harness engineering — guardrails, evals, agent loops</b></summary>
+
+Wiring them *into* the LLM workflow itself, not bolted on after. The open question: where do evals belong — pre-tool, post-tool, or as a separate critic agent?
+</details>
+
+<details>
+<summary><b>🧠  Agent memory — mem0 vs SkillForge</b></summary>
+
+[mem0](https://github.com/mem0ai/mem0) for long-horizon memory. Mapping the gap between mem0 (episodic, vector-backed) and SkillForge (procedural, AST-indexed) — different halves of the same problem.
+</details>
+
+<details>
+<summary><b>🔍  Retrieval — PageIndex & Agentic RAG</b></summary>
+
+[PageIndex](https://github.com/VectifyAI/PageIndex) and tree-structured retrieval — moving past vector-only. Reads more like how you'd actually search a codebase or a textbook.
+</details>
+
+<details>
+<summary><b>🧰  Tooling — Conductor.build & Superset side-by-side</b></summary>
+
+Running them against real PRs to see which agentic loop converges. Cursor stays the daily driver; these are the challengers.
+</details>
+
+<details>
+<summary><b>📡  Studying — Karpathy's nanochat & Autoresearch</b></summary>
+
+Single-GPU nanochat lineage. Reference for what "tiny but real" looks like at the model layer.
+</details>
 
 <br/>
 
@@ -99,13 +139,21 @@ tools:        [ Git, Postman, Puppeteer, Selenium, Claude Code, Cursor ]
 <br/>
 
 ```bash
-$ cat certifications.log
+$ cat certifications.log | column -t
 ```
 
 ```
-[Apr 2026]  Google      ─ Orchestrate Complex Multi-Agent Workflows   #23424455
-[Apr 2026]  Databricks  ─ AI Agent Fundamentals                       #178739338
+ISSUED      ISSUER       CERTIFICATION                                  CRED.ID
+─────────────────────────────────────────────────────────────────────────────────────
+Apr 2026    Google       Orchestrate Complex Multi-Agent Workflows      #23424455
+Apr 2026    Google       Introduction to Generative AI                  #23418290
+Apr 2026    Databricks   AI Agent Fundamentals                          #178739338
 ```
+<p align="left">
+  <a href="https://www.linkedin.com/in/ishan-kumar-/details/certifications/">
+    <img src="https://img.shields.io/badge/-Verify%20on%20LinkedIn-1F1F23?style=for-the-badge&logo=linkedin&logoColor=4F46E5" alt="Verify on LinkedIn" />
+  </a>
+</p>
 
 <br/>
 
